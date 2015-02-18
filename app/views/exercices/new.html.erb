@@ -1,0 +1,17 @@
+<h1>Exercices</h1>
+
+<h2>Kata Garros</h2>
+
+<%= form_for :exercices do |f| %>
+
+
+  <p>
+    <%= f.label :code %><br>
+    <%= f.text_area :code %>
+  </p>
+
+
+  <p>
+    <%= f.submit 'Soumettre' %>
+  </p>
+<% end %>
