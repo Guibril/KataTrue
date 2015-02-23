@@ -1,0 +1,12 @@
+.exo{
+	background-color: lightblue;
+	padding: 6px;
+	width: 500px;
+	margin-bottom: 20px;
+}
+
+textarea {
+	width: 400px;
+	height: 350px;
+
+}

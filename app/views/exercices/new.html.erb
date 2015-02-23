@@ -4,10 +4,14 @@
 
 <%= form_for :exercices, url: exercices_path do |f| %>
 
+   <p>
+    <%= f.label :title, "titre"%><br>
+    <%= f.text_field :title %>
+  </p>
 
   <p>
-    <%= f.label "test"%><br>
-    <%= f.text_field :text %>
+    <%= f.label :code, "code"%><br>
+    <%= f.text_area :code %>
   </p>
 
 

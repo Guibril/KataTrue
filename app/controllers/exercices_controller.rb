@@ -1,6 +1,7 @@
 class ExercicesController < ApplicationController
 
   def index
+    @exercice = Exercice.all
   end
 
   def show
@@ -37,7 +38,7 @@ class ExercicesController < ApplicationController
 
   private
   def exercice_params
-    params.require(:exercices).permit(:text)
+    params.require(:exercices).permit(:title, :code)
   end
 
 end

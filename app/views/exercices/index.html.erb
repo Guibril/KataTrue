@@ -1,0 +1,13 @@
+<h1>index</h1>
+
+<%= link_to 'Ajouter un exercice', new_exercice_path %>
+
+<% @exercice.each do |exercice| %>
+
+	<div class="exo">
+		<p>titre : <%= exercice.title %></p>
+	  <p>code : <%= exercice.code %></p>		
+	</div>
+      
+
+  <% end %>
